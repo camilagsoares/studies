@@ -4,3 +4,13 @@
 
 {{name}}
 
+<button [disabled]="isDisabled">Button</button>
+
+<p [class.background-red]="true">{{name}}</p>
+
+<span>{{age}}</span>
+
+<button (click)="sum()">+</button>
+<button (click)="sub()">-</button>
+
+<div (mousemove)="onMouseMove($event)" [class.background-red]="true">OSIJSO</div>

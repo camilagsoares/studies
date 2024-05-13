@@ -11,7 +11,18 @@ export class TemplateBindingComponent {
   public name = 'Camila'
   public age = 23
 
-  public sum(valor1: number,valor2: number) {
-    return valor1 + valor2
+  public sum() {
+    this.age++
   }
+
+  public sub() {
+    this.age--
+  }
+
+  public onMouseMove(event: MouseEvent){
+    console.log(event)
+  }
+
+  public isDisabled = true
+
 }
