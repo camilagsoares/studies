@@ -1,0 +1,12 @@
+.container{
+    border: 1px solid black;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+}
+
+.item{
+    background-color: palevioletred;
+    flex: 1;
+    margin: 10px;
+}
