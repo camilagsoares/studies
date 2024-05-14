@@ -1,12 +1,15 @@
-.container{
-    border: 1px solid black;
-    display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction: column;
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
 }
 
-.item{
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
     background-color: palevioletred;
-    flex: 1;
-    margin: 10px;
+    margin: 4px;
 }
