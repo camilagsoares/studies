@@ -4,13 +4,16 @@
 
 {{name}}
 
-<button [disabled]="isDisabled">Button</button>
+<!-- <button [disabled]="isDisabled">Button</button> -->
 
-<p [class.background-red]="true">{{name}}</p>
+<!-- <p [class.background-red]="true">{{name}}</p> -->
 
-<span>{{age}}</span>
-
+<!-- <span>{{age}}</span> -->
+<!-- 
 <button (click)="sum()">+</button>
-<button (click)="sub()">-</button>
+<button (click)="sub()">-</button> -->
 
-<div (mousemove)="onMouseMove($event)" [class.background-red]="true">OSIJSO</div>
+<!-- <div (mousemove)="onMouseMove($event)" [class.background-red]="true">OSIJSO</div> -->
+
+<!-- <input [(ngModel)]="name" /> -->
+<div [ngClass]="{'background-red': true}">CAMILA</div>
