@@ -1,0 +1,17 @@
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+
+.flex{
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+
+.item {
+    background-color: palevioletred;
+    margin: 4px;
+}
