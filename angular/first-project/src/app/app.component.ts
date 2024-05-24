@@ -22,7 +22,6 @@ import { TemplateControlFlowComponent } from './components/template/template-con
   <h1>Curso de Angular</h1>
 <!-- <router-outlet /> -->
 <app-template-control-flow />
-
   `,
 })
 export class AppComponent { }
