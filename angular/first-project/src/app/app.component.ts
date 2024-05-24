@@ -5,6 +5,7 @@ import { TemplateBindingComponent } from './components/template/template-binding
 import { TemplateVariablesComponent } from './components/template/template-variables/template-variables.component';
 import { TemplateControlFlowComponent } from './components/template/template-control-flow/template-control-flow.component';
 import { PaiOuMaeComponent } from './components/comunicacao-entre-components/pai-ou-mae/pai-ou-mae.component';
+import { AngularPipesComponent } from './components/pipes/angular-pipes/angular-pipes.component';
 
 @Component({
   selector: 'app-root',
@@ -16,10 +17,11 @@ import { PaiOuMaeComponent } from './components/comunicacao-entre-components/pai
     TemplateVariablesComponent,
     TemplateControlFlowComponent,
     PaiOuMaeComponent,
+    AngularPipesComponent,
   ],
   styles: [
     `
-/*       h1 {
+      /*       h1 {
         color: red;
       } */
     `,
@@ -28,10 +30,11 @@ import { PaiOuMaeComponent } from './components/comunicacao-entre-components/pai
     <!-- <app-new-component />
   <app-template-binding />
   <app-template-variables /> -->
-    <h1>Curso de Angular</h1>
     <!-- <router-outlet /> -->
     <!--     <app-template-control-flow /> -->
-    <app-pai-ou-mae />
+    <!--     <app-pai-ou-mae /> -->
+    <h1>Curso de Angular</h1>
+    <app-angular-pipes />
   `,
 })
 export class AppComponent {}

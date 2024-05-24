@@ -8,5 +8,5 @@ import { Component, EventEmitter, Output, output } from '@angular/core';
   styleUrl: './output.component.scss'
 })
 export class OutputComponent {
-  @Output() public outputName = new EventEmitter
+  @Output() public outputName = new EventEmitter()
 }
