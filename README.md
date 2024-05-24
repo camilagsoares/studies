@@ -3,7 +3,9 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Projetos</summary>
+  <summary>Angular</summary>
 
-<li>Projeto</li>
+<li>Projeto 1</li>
+<li>Projeto 1</li>
+
 </details>
