@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output, output } from '@angular/core';
 
 @Component({
   selector: 'app-output',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './output.component.scss'
 })
 export class OutputComponent {
-
+  @Output() public outputName = new EventEmitter
 }
