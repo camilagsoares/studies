@@ -1,11 +1,11 @@
-import { DatePipe, JsonPipe, LowerCasePipe , AsyncPipe} from '@angular/common';
+import { DatePipe, JsonPipe, LowerCasePipe , AsyncPipe , CurrencyPipe, DecimalPipe, PercentPipe} from '@angular/common';
 import { Component, signal } from '@angular/core';
 import { Observable, delay, of } from 'rxjs';
 
 @Component({
   selector: 'app-angular-pipes',
   standalone: true,
-  imports: [DatePipe,LowerCasePipe , JsonPipe,AsyncPipe],
+  imports: [DatePipe,LowerCasePipe , JsonPipe,AsyncPipe,CurrencyPipe, DecimalPipe, PercentPipe],
   templateUrl: './angular-pipes.component.html',
   styleUrl: './angular-pipes.component.scss'
 })
