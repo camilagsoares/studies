@@ -1,4 +1,4 @@
-# Studies 📜 ☕️
+# Studies ☕️
 
 
 <!-- TABLE OF CONTENTS -->
