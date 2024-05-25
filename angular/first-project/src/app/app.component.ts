@@ -4,24 +4,37 @@ import { NewComponent } from './components/new-component/new-component.component
 import { TemplateBindingComponent } from './components/template/template-binding/template-binding.component';
 import { TemplateVariablesComponent } from './components/template/template-variables/template-variables.component';
 import { TemplateControlFlowComponent } from './components/template/template-control-flow/template-control-flow.component';
+import { PaiOuMaeComponent } from './components/comunicacao-entre-components/pai-ou-mae/pai-ou-mae.component';
+import { AngularPipesComponent } from './components/pipes/angular-pipes/angular-pipes.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NewComponent, TemplateBindingComponent, TemplateVariablesComponent, TemplateControlFlowComponent],
-  styles: [`
-  h1 {
-    color:red;
-  }
-  `],
+  imports: [
+    RouterOutlet,
+    NewComponent,
+    TemplateBindingComponent,
+    TemplateVariablesComponent,
+    TemplateControlFlowComponent,
+    PaiOuMaeComponent,
+    AngularPipesComponent,
+  ],
+  styles: [
+    `
+      /*       h1 {
+        color: red;
+      } */
+    `,
+  ],
   template: `
-  <!-- <app-new-component />
+    <!-- <app-new-component />
   <app-template-binding />
   <app-template-variables /> -->
-  <h1>Curso de Angular</h1>
-<!-- <router-outlet /> -->
-<app-template-control-flow />
-
+    <!-- <router-outlet /> -->
+    <!--     <app-template-control-flow /> -->
+    <!--     <app-pai-ou-mae /> -->
+    <h1>Curso de Angular</h1>
+    <app-angular-pipes />
   `,
 })
-export class AppComponent { }
+export class AppComponent {}

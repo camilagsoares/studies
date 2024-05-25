@@ -1,9 +1,14 @@
-# Studies 📜 ☕️
+# Studies ☕️
 
 
 <!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Projetos</summary>
 
-<li>Projeto</li>
+<!-- 
+<details>
+  <summary>Angular</summary>
+
+<li>Projeto 1</li>
+<li>Projeto 1</li>
+
 </details>
+ -->
