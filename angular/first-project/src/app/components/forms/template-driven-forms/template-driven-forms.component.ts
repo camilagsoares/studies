@@ -1,10 +1,11 @@
+import { JsonPipe } from '@angular/common';
 import { Component, signal } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-template-driven-forms',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,JsonPipe],
   templateUrl: './template-driven-forms.component.html',
   styleUrl: './template-driven-forms.component.scss',
 })
@@ -23,4 +24,12 @@ export class TemplateDrivenFormsComponent {
       preco: 'R$7',
     },
   ]);
+
+  public submitForm(form: NgForm) {
+    console.log(form.valid)
+
+    if(form.valid) {
+      console.log(form.value)
+    } 
+  }
 }

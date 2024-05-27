@@ -1,11 +1,15 @@
 <p>template-driven-forms works!</p>
 
-<form action="">
+<form #form="ngForm" (ngSubmit)="submitForm(form)">
   <select name="selectComidas" #comidas="ngModel" ngModel>
     <option value="">Selecione um alimento</option>
-    <option value="Comida 1">Comida 1</option>
+    @for(item of listComidas(); track item) {
+    <option [ngValue]="item">{{ item.comida }}</option>
+    }
   </select>
 
   <hr />
-  {{ comidas.value }}
+  {{ comidas.value | json}}
+
+  <button>Send</button>
 </form>
