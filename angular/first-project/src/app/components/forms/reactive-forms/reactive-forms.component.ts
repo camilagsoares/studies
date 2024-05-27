@@ -20,7 +20,9 @@ export class ReactiveFormsComponent {
       front: new FormControl('Angular'),
       back: new FormControl('NodeJS'),
     }),
-    myFavoriteFoods: new FormArray([]),
+    myFavoriteFoods: new FormArray([
+      new FormControl('X-tudo'),
+    ]),
   });
 
   public update() {
@@ -33,5 +35,10 @@ export class ReactiveFormsComponent {
     });
   }
 
-  public addMyFavoriteFood () {}
+  public addMyFavoriteFood (newFood: string) {
+    const myFavoriteFoods = this.profileForm.get('myFavoriteFoods') as FormArray;
+    const addNewFood = new FormControl(newFood)
+
+    myFavoriteFoods.push(addNewFood)
+  }
 }
