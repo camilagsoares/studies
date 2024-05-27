@@ -1,1 +1,11 @@
 <p>reactive-forms works!</p>
+
+<form>
+    <label>
+        Nome: 
+        <input type="text" [formControl]="name">
+        <p>{{name.value}}</p>
+    </label>
+
+    <button type="button" (click)="updateName()">Update name</button>
+</form>
