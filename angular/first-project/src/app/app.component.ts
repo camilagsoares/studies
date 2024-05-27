@@ -6,6 +6,8 @@ import { TemplateVariablesComponent } from './components/template/template-varia
 import { TemplateControlFlowComponent } from './components/template/template-control-flow/template-control-flow.component';
 import { PaiOuMaeComponent } from './components/comunicacao-entre-components/pai-ou-mae/pai-ou-mae.component';
 import { AngularPipesComponent } from './components/pipes/angular-pipes/angular-pipes.component';
+import { TemplateDrivenFormsComponent } from './components/forms/template-driven-forms/template-driven-forms.component';
+import { ReactiveFormsComponent } from './components/forms/reactive-forms/reactive-forms.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +20,8 @@ import { AngularPipesComponent } from './components/pipes/angular-pipes/angular-
     TemplateControlFlowComponent,
     PaiOuMaeComponent,
     AngularPipesComponent,
+    TemplateDrivenFormsComponent,
+    ReactiveFormsComponent
   ],
   styles: [
     `
@@ -28,13 +32,17 @@ import { AngularPipesComponent } from './components/pipes/angular-pipes/angular-
   ],
   template: `
     <!-- <app-new-component />
-  <app-template-binding />
-  <app-template-variables /> -->
-    <!-- <router-outlet /> -->
-    <!--     <app-template-control-flow /> -->
-    <!--     <app-pai-ou-mae /> -->
+    <app-template-binding />
+    <app-template-variables />
+    <router-outlet />
+    <app-template-control-flow />
+    <app-pai-ou-mae />
     <h1>Curso de Angular</h1>
-    <app-angular-pipes />
+     <app-angular-pipes />
+
+ -->
+    <app-template-driven-forms />
+    <app-reactive-forms  />
   `,
 })
 export class AppComponent {}

@@ -1,0 +1,11 @@
+<p>template-driven-forms works!</p>
+
+<form action="">
+  <select name="selectComidas" #comidas="ngModel" ngModel>
+    <option value="">Selecione um alimento</option>
+    <option value="Comida 1">Comida 1</option>
+  </select>
+
+  <hr />
+  {{ comidas.value }}
+</form>
