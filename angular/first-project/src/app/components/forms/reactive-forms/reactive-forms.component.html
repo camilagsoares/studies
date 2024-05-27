@@ -1,11 +1,25 @@
 <p>reactive-forms works!</p>
 
-<form>
+<form [formGroup]="profileForm">
+  <label>
+    Nome:
+    <input type="text" formControlName="name" />
+    <p>{{ profileForm.value.name }}</p>
+  </label>
+
+  <div formGroupName="myStacks">
     <label>
-        Nome: 
-        <input type="text" [formControl]="name">
-        <p>{{name.value}}</p>
+      Front:
+      <input type="text" formControlName="front" />
+      <p>value: {{ profileForm.value.myStacks?.front }}</p>
     </label>
 
-    <button type="button" (click)="updateName()">Update name</button>
+    <label>
+      Back:
+      <input type="text" formControlName="back" />
+      <p>value: {{ profileForm.value.myStacks?.back }}</p>
+    </label>
+  </div>
+
+  <button type="button" (click)="update()">Update name</button>
 </form>

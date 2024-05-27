@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import {
+  FormArray,
+  FormControl,
+  FormGroup,
+  ReactiveFormsModule,
+} from '@angular/forms';
 
 @Component({
   selector: 'app-reactive-forms',
@@ -9,9 +14,24 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
   styleUrl: './reactive-forms.component.scss',
 })
 export class ReactiveFormsComponent {
-  name = new FormControl('');
+  public profileForm = new FormGroup({
+    name: new FormControl(''),
+    myStacks: new FormGroup({
+      front: new FormControl('Angular'),
+      back: new FormControl('NodeJS'),
+    }),
+    myFavoriteFoods: new FormArray([]),
+  });
 
-  public updateName() {
-    this.name.setValue('Maria')
+  public update() {
+    this.profileForm.patchValue({
+      name: 'Maria',
+      myStacks: {
+        front: 'Vue',
+        back: 'Python',
+      },
+    });
   }
+
+  public addMyFavoriteFood () {}
 }
