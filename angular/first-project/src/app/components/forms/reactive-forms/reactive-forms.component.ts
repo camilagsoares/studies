@@ -35,6 +35,7 @@ export class ReactiveFormsComponent {
     });
   }
 
+
   public addMyFavoriteFood (newFood: string) {
     const myFavoriteFoods = this.profileForm.get('myFavoriteFoods') as FormArray;
     const addNewFood = new FormControl(newFood)
