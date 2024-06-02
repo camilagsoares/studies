@@ -40,6 +40,7 @@ import { ReactiveFormsComponent } from './components/forms/reactive-forms/reacti
     <h1>Curso de Angular</h1>
      <app-angular-pipes />
 
+     
     <app-template-driven-forms />
      -->
      
