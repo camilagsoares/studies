@@ -8,6 +8,7 @@ import { PaiOuMaeComponent } from './components/comunicacao-entre-components/pai
 import { AngularPipesComponent } from './components/pipes/angular-pipes/angular-pipes.component';
 import { TemplateDrivenFormsComponent } from './components/forms/template-driven-forms/template-driven-forms.component';
 import { ReactiveFormsComponent } from './components/forms/reactive-forms/reactive-forms.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,8 @@ import { ReactiveFormsComponent } from './components/forms/reactive-forms/reacti
     PaiOuMaeComponent,
     AngularPipesComponent,
     TemplateDrivenFormsComponent,
-    ReactiveFormsComponent
+    ReactiveFormsComponent,
+    ButtonComponent
   ],
   styles: [
     `
@@ -44,7 +46,14 @@ import { ReactiveFormsComponent } from './components/forms/reactive-forms/reacti
     <app-template-driven-forms />
      -->
      
-    <app-reactive-forms  />
+    <!-- <app-reactive-forms  /> -->
+
+    
+    <app-button textButton="OAJAOIHA" />
+    <app-button [textButton]="textBotao" />
+
   `,
 })
-export class AppComponent {}
+export class AppComponent {
+  textBotao = 'OLA'
+}
