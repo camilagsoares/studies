@@ -9,4 +9,20 @@ import { Component,Input } from '@angular/core';
 })
 export class ButtonComponent {
   @Input() textButton!: string 
+
+  constructor(){
+    console.log("componente construido")
+  }
+
+  ngOnInit() {
+    console.log("componente inicializado")
+
+  }
+
+  ngOnDestroy(){
+    console.log("componente destruido")
+  }
+
+
+  
 }
