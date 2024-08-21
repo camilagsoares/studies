@@ -1,10 +1,11 @@
+import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 import { Input } from '@angular/core';
 
 @Component({
   selector: 'app-button',
   standalone: true,
-  imports: [],
+  imports: [NgClass],
   templateUrl: './button.component.html',
   styleUrl: './button.component.css'
 })
@@ -12,5 +13,7 @@ import { Input } from '@angular/core';
 export class ButtonComponent {
 
 @Input() textButton: string 
+
+@Input() size: string  = 'auto'
 
 }
